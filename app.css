@@ -1,0 +1,520 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #404040;
+}
+
+.main {
+    width: 100%;
+    background: url(image/james\ barr.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+body, html {
+    position: relative;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.content {
+    width: 85%;
+    margin: auto;
+}
+
+.content .navbar ul {
+    display: flex;
+    justify-content: end;
+    padding-top: 20px;
+}
+.content .navbar a {
+    text-decoration: none;
+    color: #A6A6A6;
+    padding: 12px;
+}
+.content .navbar a:hover,
+.content .navbar a.active{
+color: #404040;
+}
+
+.content .intro {
+    display: flexbox;
+    align-items: center;
+}
+.intro {
+ /* border: #404040 1px solid; */
+ width: 460px;
+}
+.intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+    /* width: 378px; */
+    margin-top: 35%;
+}
+.intro h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    /* width: 378px; */
+}
+.intro p {
+    width: 467px;
+    margin:20px 0;
+    line-height: 24px;
+}
+.button {
+    background: transparent;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 20px;
+    width: 189px;
+}
+button:hover {
+    background-color: #404040;
+    color: #A6A6A6;
+}
+
+
+.image {
+    margin: 15% 7.5% 0%;
+    display: flex;
+}
+  
+
+.about h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 25px 20px;
+}
+.about p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px;
+}
+
+.gallery {
+    width: 85%;
+    margin: auto;
+}
+.collection {
+    text-align: center;
+}
+.collection h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.collection p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 40px; 
+}
+
+.galleryimg > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.galleryimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 20px;
+}
+.galleryimg .gallery-adj:hover {
+    transform:scale(1.1) ;
+}
+.gallery .adjust  {
+    width: 189px;
+    left: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* popup-image */
+.gallery .popup-image {
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.gallery .popup-image span {
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor:pointer ;
+    z-index: 100;
+}
+.gallery .popup-image img {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+.adjust .btn {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    font-size: 18px;
+    margin: 40px 0;
+    padding: 20px;
+    width: 189px;
+}
+.adjust .btn:hover {
+    background-color: #404040;
+    color: #f2f2f2;
+}
+.adjust .svg {
+    padding-left: 16px;
+}
+.adjust .svg:hover{
+    color: #A6A6A6;
+}
+.client {
+    text-align: center;
+    margin: 55px auto ;
+}
+.brands .logo {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.register {
+    width:85%;
+    margin: auto;
+}
+.contact {
+    margin-top:80px;
+    text-align: center;
+}
+.contact h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.contact p {
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 24px;
+}
+.register .align {
+    display: flex;
+    justify-content: space-between;
+}
+form {
+    text-align: end;
+    font-size: 18px;
+}
+form input {
+    background-color: #f2f2f2;
+    width: 505px;
+    /* height: 60px; */
+    margin-bottom: 40px;
+    margin-left: 42px;
+    border: 1px solid #404040;
+    border-radius: 6px;
+    
+}
+.input-text {
+    padding: 20px 5px;
+}
+form input:hover {
+    border: 2px solid #0096c7;
+}
+form label {
+    margin-top: 0;
+}
+.label {
+    display: flex;
+    justify-content: start;
+    
+}
+
+#message {
+    padding-bottom: 120px;  
+}
+
+.btn-form {
+    margin-right: 34%;
+}
+
+.inputbtn {
+    background: transparent;
+    font-size: 18px;
+    width: 295px;
+    padding: 20px 0;
+    
+}
+.inputbtn:hover {
+    background-color: #404040;
+    color: #f2f2f2;
+}
+
+footer {
+    margin-bottom: 41px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 53.4px;
+    margin-bottom: 13px;
+}
+footer .icons {
+    display:flex;
+    justify-content: center;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #404040;
+}
+
+/* mobile device */
+@media (max-width: 768px) {
+    .hamburger {
+        position: absolute;
+        top: 37px;
+        left: 20px;
+        width: 24px;
+        height: 18px;
+        display: block;
+        
+    }
+   
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+   
+    .content {
+        width:100%;
+    }
+    .navarea {
+        padding: 0;
+    }
+    .nav-link {
+        position: relative;
+        right: -100%;
+        top: 0px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #A6A6A6;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+    .nav-item {
+        margin: 16px 0;
+        color: #404040;
+    }
+    .nav-link.active {
+        left: 0;
+    }
+
+   .content .nav-link .nav-ref {
+    color: #404040;
+    } 
+
+    .content .nav-link a:hover,
+    .content .navbar a.active{ 
+        background-color: #404040;
+         color: #f2f2f2;
+    }
+
+    /* body */
+    .main {
+        background: url(image/james\ barr.jpg);
+        background-size: cover;
+        background-position:center;
+        min-height: 896px ;
+        
+        
+    }
+    .content .intro {
+        display: block;
+        margin-top:350px;
+        margin-left: 20px;
+        color: #404040;
+    }
+    .intro h1 h2 {
+        font-size: 24px;
+    }
+    .intro p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .button {
+        display: none;
+    }
+
+    img {
+        width: 130px;
+        height: 203px;
+        margin-top: 101px;
+    }
+    .history {
+        width: 100%;
+    }
+    .image {
+        display: flex;
+        margin: 5% 5%;
+        
+    }
+    .about h1 {
+        font-size: 20px;
+        margin-top: 45px;
+
+    }
+    .about p {
+        font-size: 9px;
+        line-height: 13.9px;
+        margin-top: 32px; 
+    }
+
+
+    /* gallery */
+    .collection h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .collection p {
+        font-size: 10px;
+         
+    }
+    .adjust .btn {
+        position: absolute;
+        margin-left: 35px;
+        font-size: 14px;
+        width: 112px;
+        padding: 5px;
+    }
+    .adjust .svg {
+        padding-left: 10px;
+    }
+    .gallery {
+        width: 60%;
+    }
+    .galleryimg {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1em;
+
+        overflow-x: auto;
+
+        scroll-snap-type: inline mandatory;
+        
+    }
+    .gallery-adj {
+        margin-top: 0%;
+        width: 242px;
+        height: 257px;
+    }
+    .gallery .popup-image img {
+        width: 95%;
+        height: 100%;
+    }
+
+    /* logo */
+    .brands {
+        width: 100%;
+    }
+    .client h1 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .client p {
+        font-size: 10px;
+    }
+
+    /* form */
+    .register {
+        width:100%;
+    }
+    .contact h1 {
+        font-size: 20px;
+    }
+    .contact p {
+        font-size: 10px;
+    }
+    .align img {
+        display: none;
+    }
+    form {
+        
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        
+    }
+
+    form input {
+        width: 370px;
+        margin-bottom: 35px;
+        margin-top: 8px;
+    }
+    form label {
+        margin-right: 80%;
+    }
+    .input-text {
+        padding: 10px 5px;
+        
+    }
+    #message {
+        padding-bottom: 100px;  
+    }
+    .register .align {
+        display: flex;
+        justify-content: center;
+    }
+    .btn-form {
+        margin-left: 6%;
+    }
+    .inputbtn {
+        background: transparent;
+        font-size: 16px;
+        width: 245px;
+        padding: 20px 0;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
